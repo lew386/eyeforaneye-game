@@ -8,9 +8,10 @@ namespace eyeforaneye_game
 {
     class NearestNeighborPictureBox : PictureBox
     {
+        //public new bool DoubleBuffered = true;
         public NearestNeighborPictureBox()
         {
-            this.DoubleBuffered = true;
+            base.DoubleBuffered = true;
             this.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
             this.SetStyle(ControlStyles.ResizeRedraw, true);
         }
